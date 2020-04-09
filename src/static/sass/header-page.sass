@@ -1,0 +1,112 @@
+$header: #303030
+$strips: #1a1a1a
+$accent: #7b6c63
+$desc-icon: #949494
+$subtitle: #212121
+$white: #fff
+$black: #000
+$link: #29c5f2
+
+
+.header
+	&-page 
+		background: url(../img/bg.jpg) 0 0 no-repeat
+		max-width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+	&-menu 
+		background-color: $header
+		height: 95px
+	&-nav
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 95px
+	&-content
+		height: 100%
+		position: relative
+		top: 10%
+	&-subtitle
+		width: 290px;
+		color: #ffffff;
+		font-family: Raleway;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 30px;
+		text-transform: uppercase;
+		letter-spacing: 2.4px;
+	&-title
+		margin-top: 10px
+		margin-bottom: 55px
+		& span
+			color: $accent
+			font-family: 'Raleway'
+			font-weight: 500
+	&-subtitle
+		margin-bottom: 0px
+		margin-top: 185px
+	&-button
+		display: inline-block
+		padding: 20px 61px 22px 69px;
+		background-color: #272421
+		border-radius: 4px
+		&__link
+			font-family: Raleway
+			font-size: 16px
+			letter-spacing: 1.6px
+			text-decoration: none
+			text-transform: uppercase
+			color: #ffffff
+		& i
+			color: #fff;
+			font-size: 14px;
+			padding-left: 13px;
+
+.logo
+	width: 157px
+	height: 36px
+	color: #ffffff
+	font-family: "OleoScript"
+	font-size: 48px
+	font-weight: 400
+	line-height: 30px
+	text-decoration: none
+
+.nav
+	&-item
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		max-width: 562px
+	&-link
+		list-style-type: none
+		padding-left: 40px
+		font-family: Raleway
+		font-size: 12px
+		font-weight: 400
+		line-height: 30.07px
+		text-transform: uppercase
+		letter-spacing: 1.2px
+		cursor: pointer
+		text-align: center
+		width: auto
+		display: inline-block
+		& a
+			text-decoration: none
+			color: #ffffff
+		&:after
+			content: ''
+			display: block
+			margin: 0 auto
+			width: 35px
+			height: 2px
+			border: 1px solid transparent
+		&:hover::after
+			content: ''
+			display: block
+			margin: 0 auto
+			width: 35px
+			height: 2px
+			background-color: $accent
+			transition: 0.3s

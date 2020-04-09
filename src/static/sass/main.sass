@@ -1,12 +1,127 @@
-body
-	background-color: #efefef
+@import 'normalize.css'
+@import 'fonts.sass'
+@import 'header-page.sass'
+@import 'about-page.sass'
+@import 'project-page.sass'
+@import 'team-page.sass'
+@import 'body-page.sass'
+@import 'contact-page.sass'
 
-body
-	color: black
 
-p
-	border: 1px solid #000
+$header: #303030
+$strips: #1a1a1a
+$accent: #7b6c63
+$desc-icon: #949494
+$subtitle: #212121
+$white: #fff
+$black: #000
+$link: #29c5f2
+
+
+h1
+	width: 850px
+	font-family: Raleway
+	font-size: 66px
+	font-weight: 400
+	line-height: 75px
+	text-transform: uppercase
+	font-family: Raleway
+	letter-spacing: 1.65px
+	color: $white
+
+h2
+	max-width: 600px
+	text-align: center
+	height: 30px
+	color: $accent
+	font-family: "Raleway"
+	font-size: 40px
+	font-weight: 700
+	line-height: 47.92px
+	text-transform: uppercase
+	margin: 0 auto
+	margin-top: 90px
+	letter-spacing: 2px
+	&::after
+			content: ''
+			display: block
+			margin: 0 auto
+			width: 76px
+			height: 6px
+			background-color: $accent
+			margin-top: 40px
+
+h3 
+	color: $accent
+	font-family: "Raleway"
+	font-size: 24px
+	font-weight: 500
+	line-height: 30px
+	text-transform: uppercase
+	letter-spacing: 1.2px
+
+h4
+	color: #363636
+	font-family: "Raleway"
+	font-size: 18px
+	font-weight: 400
+	line-height: 29.96px
+	text-transform: uppercase
+	letter-spacing: 0.9px
+	margin: 0
+
+.wrapper
+	max-width: 1166px
+	padding: 0 16px
+	margin: 0 auto
+
+.description
+	font-family: "Raleway"
+	font-size: 18px
+	margin: 100 auto 0
+	line-height: 30.06px
+	color: $subtitle
+	text-align: center
+
+p 
+	font-family: "Raleway"
+	font-size: 16px
+	font-weight: 400
+	line-height: 30px
+	letter-spacing: 0.8px
+
+.button-arrow
+	padding: 8px 25px 8px 20px
 	display: inline-block
+	color: #000000
+	font-family: Raleway
+	font-size: 16px
+	font-weight: 400
+	line-height: 30px
+	text-transform: uppercase
+	font-family: Raleway
+	letter-spacing: 0.8px
+	border: 2px solid #000
+	border-radius: 5px
+	& i 
+		padding-left: 6px
+	& a 
+		text-decoration: none
+		color: #000000
+
+.button
+	padding: 8px 25px 8px 20px
+	display: inline-block
+	color: #000000
+	font-family: "Raleway"
+	font-size: 16px
+	font-weight: 400
+	line-height: 30px
+	text-transform: uppercase
+	font-family: Raleway
+	letter-spacing: 0.8px
+	border: 2px solid #000
+	border-radius: 5px
 
 @import 'libs.sass'
 
@@ -16,4 +131,6 @@ p
 	height: 400px
 	padding: 50px
 	margin: 0 20px
+
+
 

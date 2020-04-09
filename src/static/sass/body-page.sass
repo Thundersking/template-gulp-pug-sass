@@ -1,0 +1,112 @@
+$header: #303030
+$strips: #1a1a1a
+$accent: #7b6c63
+$desc-icon: #949494
+$subtitle: #212121
+$white: #fff
+$black: #000
+$link: #29c5f2
+
+.blog
+	&-page
+		margin-top: 500px
+	&-title
+		margin-bottom: 86px
+		& p 
+			width: 500px
+	&-content
+	&-item 
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		position: relative
+		&_inversion
+			display: flex
+			flex-direction: row-reverse
+			justify-content: flex-end
+			margin: 60px 0
+		&__img
+			padding-right: 80px
+		&__strips
+			border-radius: 50%
+			background-color: #ebebeb
+			position: absolute
+			width: 17px
+			height: 17px
+			left: 49.3%
+			&::after
+				content: ''
+				position: absolute
+				left: 50%
+				height: 331px
+				width: 1px
+				background-color: #ebebeb
+				z-index: -1
+			&_inversion
+				border-radius: 50%
+				background-color: #ebebeb
+				position: absolute
+				width: 17px
+				height: 17px
+				right: 49.5%
+				&::after
+					content: ''
+					position: absolute
+					left: 50%
+					height: 331px
+					width: 1px
+					background-color: #ebebeb
+					z-index: -1
+		&__date
+			color: #7b6c63
+			font-family: "Raleway"
+			font-size: 16px
+			font-weight: 500
+			line-height: 29.98px
+			letter-spacing: 0.8px
+			margin: 0
+			margin-top: -10px
+		&__title
+			color: #212121
+			font-family: "Raleway"
+			font-size: 24px
+			font-weight: 400
+			line-height: 29.98px
+			letter-spacing: 1.2px
+			text-transform: inherit
+			margin-top: 5px
+		&__text
+			width: 515px
+			color: #949494
+			font-family: "Raleway"
+			font-size: 16px
+			font-weight: 400
+			line-height: 29.98px
+			letter-spacing: 0.8px
+		&__desc
+			padding-right: 27px
+			&_inversion
+				padding-left: 30px
+				text-align: right
+				margin-right: 80px
+	&-button
+		display: block
+		width: 34px
+		text-align: center
+		color: #fff
+		font-family: "Raleway"
+		font-size: 14px
+		font-weight: 500
+		line-height: 18px
+		letter-spacing: 0.7px
+		width: 90px
+		height: 90px
+		border-radius: 50%
+		background-color: $accent
+		margin: 0 auto
+		border: 8px solid #ebebeb
+		outline: none
+		cursor: pointer 
+
+#blog-button
+	display: none

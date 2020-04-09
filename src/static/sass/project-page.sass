@@ -1,0 +1,84 @@
+$header: #303030
+$strips: #1a1a1a
+$accent: #7b6c63
+$desc-icon: #949494
+$subtitle: #212121
+$white: #fff
+$black: #000
+$link: #29c5f2
+
+
+.project
+	&-title
+		width: 530px
+	&-subtitle
+		width: 470px
+		margin: 0 auto 90px
+	&-body
+		display: flex
+	&-img
+		max-width: 25%
+		position: relative
+		&__rectangle
+			padding: 107px 153px 90px
+			background-color: #000
+			opacity: 0
+			position: absolute
+			top: 6%
+			left: 4%
+			transition: 0.3s
+			text-align: center
+			& h4
+				color: #fff
+				font-family: "Raleway"
+				font-size: 18px
+				font-weight: 500
+				line-height: 30px
+				text-transform: uppercase
+				letter-spacing: 2.7px
+				&::after 
+					content: ''
+					display: block
+					text-align: center
+					margin: 17px auto
+					width: 36px
+					height: 4px
+					background-color: #fff
+			& p
+				color: #fff
+				font-family: Raleway
+				font-size: 14px
+				font-weight: 300
+				line-height: 30px
+				text-transform: uppercase
+				letter-spacing: 4.8px
+		&:hover .project-img__rectangle
+			opacity: 0.8
+		& img
+			max-width: 100%
+	&-desc
+		background-color: $strips
+		padding: 136px 0px
+		text-align: center
+		& h3
+			color: #fff
+		& p
+			max-width: 680px
+			color: #fff
+			font-family: "Raleway"
+			font-size: 18px
+			font-weight: 400
+			line-height: 47.82px
+			letter-spacing: 0.9px
+			margin: 0 auto
+			& a
+				color: #29c5f2;
+				letter-spacing: 0.9px;
+				font-size: 18px
+				text-decoration: none
+	&-button
+		display: block!important
+		width: 170px
+		margin: 0 auto
+		text-align: center
+		margin-top: 90px

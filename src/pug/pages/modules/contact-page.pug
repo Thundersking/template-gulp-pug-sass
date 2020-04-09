@@ -1,0 +1,22 @@
+.contact-page
+	.wrapper
+		h2.contact-title Contact
+		.contact-block
+			form(class="contact-form" action="#")
+				mixin contact_name(type, name, label)
+					.contact-item(class!=attributes.class1)
+						input(
+							type=type
+							name=name
+							class!=attributes.class
+						)
+						label.contact-label= label
+				+contact_name('name', 'name', 'Name*')(class='contact-name contact-fill', class1='contact-item_1')
+				+contact_name('email', 'email', 'Email*')(class='contact-email contact-fill', class1='contact-item_2')
+				+contact_name('text', 'message', 'Message...')(class='contact-message contact-fill', class1='contact-item_3')
+				.contact-button.contact-item_4
+					input(
+						type= "submit"
+						name= "button"
+						value= "Submit"
+					)

@@ -13,8 +13,6 @@ module.exports = function () {
 				title: "stile"
 			}))
 			.pipe($.gp.plumber())
-			.pipe($.gp.csso()) //оптимизирует наш css
-			.pipe($.gp.sourcemaps.write())
 			.pipe($.gulp.dest('build/static/css')) //куда будет складываться наш обрабатываемый файл
 			.pipe($.bs.reload({
 				stream:true
